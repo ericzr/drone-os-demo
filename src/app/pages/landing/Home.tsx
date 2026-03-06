@@ -1,4 +1,4 @@
-import { ArrowRight, Box, Check, Cpu, FileBarChart, Globe, LayoutDashboard, Map, Shield, Users, Zap } from "lucide-react";
+import { ArrowRight, Box, Check, Cpu, FileBarChart, Globe, LayoutDashboard, Map, Shield, Users, Zap, Radio, Layers, AppWindow, Server } from "lucide-react";
 import { Link } from "react-router";
 import { motion } from "motion/react";
 import CommandCenterScreen from "../../components/CommandCenterScreen";
@@ -38,17 +38,19 @@ export default function Home() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#F5C244] opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-[#F5C244]"></span>
               </span>
-              DroneOS 企业版 v2.0 正式发布
+              全过程无人值守作业应用架构
             </div>
             
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6">
-              定义未来的 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F5C244] to-[#ffdea0]">低空经济操作系统</span>
+              大航蜂 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F5C244] to-[#ffdea0]">Drone OS</span>
             </h1>
             
             <p className="text-xl text-neutral-300 max-w-3xl mx-auto mb-10 leading-relaxed">
-              一体化「设备 + 人员 + 任务 + 行业业务流程 + 数据报告」SaaS 管理平台。
+              提供设备+数据+应用的完整应用框架，基于云/边/端协同工作机制，
               <br className="hidden md:block" />
-              帮助企业从"项目制"向"产品制"转型，实现规模化运营。
+              实现无人机集群精细化航线规划、自动化作业指令调度、边缘负载与视觉算法集成，
+              <br className="hidden md:block" />
+              帮助政企实现全过程无人值守的规模化运营。
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -91,27 +93,32 @@ export default function Home() {
       <section id="features" className="py-24 bg-neutral-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">全流程数字化管理</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">核心能力</h2>
             <p className="text-neutral-400 max-w-2xl mx-auto">
-              打破信息孤岛，实现从资产入库到任务交付的全链路闭环管理。
+              基于云/边/端协同工作机制，以清爽的图传、数传、远控系统设计应用模式，构建完整的无人机作业能力体系。
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <FeatureCard 
-              icon={<LayoutDashboard className="w-8 h-8 text-[#F5C244]" />}
-              title="资产全生命周期管理"
-              desc="建立无人机、电池、载荷的一机一档。自动记录飞行时长、维修保养记录、折旧计算，让每一分钱都花得明白。"
+              icon={<Radio className="w-8 h-8 text-[#F5C244]" />}
+              title="无人机集群控制"
+              desc="多机型/多功能无人机精细化航线规划，支撑单次/循环/预约/触发飞行任务。"
             />
             <FeatureCard 
-              icon={<Cpu className="w-8 h-8 text-[#F5C244]/80" />}
-              title="智能任务调度"
-              desc="支持多种任务类型（巡检、测绘、植保）。可视化地图派单，自动匹配空闲飞手与可用设备，效率提升 300%。"
+              icon={<Cpu className="w-8 h-8 text-[#F5C244]" />}
+              title="自动化作业指令系统"
+              desc="云/边/端协同工作机制，清爽的图传、数传、远控系统设计应用模式。"
             />
             <FeatureCard 
-              icon={<FileBarChart className="w-8 h-8 text-[#F5C244]/60" />}
-              title="自动化数据报告"
-              desc="内置多行业标准报告模板。任务结束自动生成巡检报告、问题点位清单，支持客户在线确认与下载。"
+              icon={<Layers className="w-8 h-8 text-[#F5C244]" />}
+              title="边缘/负载/算法集成"
+              desc="支持接入负载指令与视觉算法，持续更新算法、驾驶舱、业务系统。"
+            />
+            <FeatureCard 
+              icon={<AppWindow className="w-8 h-8 text-[#F5C244]" />}
+              title="应用中心 / 算法中心"
+              desc="开放应用市场与二次开发接口，支持算法盒子、虚拟座舱、飞行审计等组件化应用。"
             />
           </div>
 
@@ -146,6 +153,46 @@ export default function Home() {
                 <p className="text-neutral-400 text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 完整应用框架 */}
+      <section className="py-24 bg-neutral-950">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-6 backdrop-blur-md">
+              <Server className="w-4 h-4 text-[#F5C244]" />
+              <span className="text-[#F5C244] text-sm font-medium tracking-wider uppercase">Application Framework</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">设备 + 数据 + 应用的完整框架</h2>
+            <p className="text-neutral-400 max-w-2xl mx-auto">
+              采用「开箱即用」的标准化接入体系，通过企业级能力构建数据资源规范管理体系，让企业与开发者共创多元创新应用。
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="relative p-8 rounded-2xl border border-neutral-800 bg-gradient-to-br from-neutral-900/80 to-neutral-950 hover:border-[#F5C244]/40 transition-all group">
+              <div className="w-14 h-14 rounded-xl bg-[#F5C244]/10 flex items-center justify-center mb-6 group-hover:bg-[#F5C244]/20 transition-colors">
+                <Radio className="w-7 h-7 text-[#F5C244]" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">设备集成</h3>
+              <p className="text-neutral-400 leading-relaxed">支持多设备、多型号设备统一接入，集约管理。标准化接入体系，开箱即用。</p>
+            </div>
+            <div className="relative p-8 rounded-2xl border border-neutral-800 bg-gradient-to-br from-neutral-900/80 to-neutral-950 hover:border-[#F5C244]/40 transition-all group">
+              <div className="w-14 h-14 rounded-xl bg-[#F5C244]/10 flex items-center justify-center mb-6 group-hover:bg-[#F5C244]/20 transition-colors">
+                <Shield className="w-7 h-7 text-[#F5C244]" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">数据治理</h3>
+              <p className="text-neutral-400 leading-relaxed">内网部署、RBAC 分权、焦点存储与旁路推流，构建数据资源规范管理体系，实现数据可控共享。</p>
+            </div>
+            <div className="relative p-8 rounded-2xl border border-neutral-800 bg-gradient-to-br from-neutral-900/80 to-neutral-950 hover:border-[#F5C244]/40 transition-all group">
+              <div className="w-14 h-14 rounded-xl bg-[#F5C244]/10 flex items-center justify-center mb-6 group-hover:bg-[#F5C244]/20 transition-colors">
+                <AppWindow className="w-7 h-7 text-[#F5C244]" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">融合应用</h3>
+              <p className="text-neutral-400 leading-relaxed">开放应用市场与二次开发接口，支持算法盒子、虚拟座舱、集成指令、飞行审计、空间计算等组件化应用。</p>
+            </div>
           </div>
         </div>
       </section>
@@ -206,9 +253,9 @@ export default function Home() {
       <section className="py-24 bg-gradient-to-br from-[#F5C244]/20 to-neutral-900 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10" />
         <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">准备好升级您的低空业务了吗？</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">深度打通行业各应用要素</h2>
           <p className="text-xl text-[#F5C244] mb-10">
-            立即注册体验 DroneOS 企业版，开启数字化运营新篇章。
+            实现业务端数据无缝流转，让无人机任务可规划、易管理、看得见。
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
 

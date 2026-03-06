@@ -77,7 +77,7 @@ export default function LandingLayout() {
                 <span className="font-bold text-lg text-white">大航蜂 Drone OS</span>
               </div>
               <p className="text-neutral-400 text-sm max-w-sm">
-                面向未来的无人机行业解决方案操作系统。统一管理资产、人员、任务与数据，赋能低空经济数字化转型。
+                全过程无人值守作业应用架构。提供设备+数据+应用的完整应用框架，帮助政企实现规模化运营。
               </p>
             </div>
             <div>
@@ -98,7 +98,7 @@ export default function LandingLayout() {
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-neutral-800 text-center text-neutral-500 text-sm">
-            &copy; 2026 DroneOS Enterprise. All rights reserved.
+            &copy; 2026 深圳云界空域科技有限公司. All rights reserved.
           </div>
         </div>
       </footer>
