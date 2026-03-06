@@ -150,9 +150,9 @@ export default function CommandCenterScreen() {
       {/* ── 地图背景 ── */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1920&q=80"
-          alt="Satellite Map"
-          className="w-full h-full object-cover opacity-40"
+          src="/drone-os-demo/command-center-map.png"
+          alt="指挥中心地图"
+          className="w-full h-full object-cover opacity-60"
         />
         {/* 网格叠加 */}
         <div className="absolute inset-0 opacity-10"
