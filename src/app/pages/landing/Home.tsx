@@ -65,25 +65,45 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats/Trust Section */}
-      <section className="bg-neutral-900 border-y border-neutral-800 py-12">
+      {/* 核心亮点 — 解决行业痛点 */}
+      <section className="bg-neutral-900 border-y border-neutral-800 py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">500+</div>
-              <div className="text-neutral-400 text-sm">服务企业</div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="flex items-start gap-4 p-5 rounded-xl bg-neutral-800/40 border border-neutral-700/50">
+              <div className="shrink-0 w-10 h-10 rounded-lg bg-[#F5C244]/10 flex items-center justify-center text-[#F5C244]">
+                <Radio className="w-5 h-5" />
+              </div>
+              <div>
+                <div className="text-white font-semibold mb-1">多机型统一接入</div>
+                <div className="text-neutral-400 text-sm leading-relaxed">告别设备孤岛，一套系统管控所有品牌与型号的无人机</div>
+              </div>
             </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">10W+</div>
-              <div className="text-neutral-400 text-sm">累计飞行架次</div>
+            <div className="flex items-start gap-4 p-5 rounded-xl bg-neutral-800/40 border border-neutral-700/50">
+              <div className="shrink-0 w-10 h-10 rounded-lg bg-[#F5C244]/10 flex items-center justify-center text-[#F5C244]">
+                <Cpu className="w-5 h-5" />
+              </div>
+              <div>
+                <div className="text-white font-semibold mb-1">全过程无人值守</div>
+                <div className="text-neutral-400 text-sm leading-relaxed">从航线规划到任务执行全自动化，大幅降低人力依赖</div>
+              </div>
             </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">12</div>
-              <div className="text-neutral-400 text-sm">行业解决方案</div>
+            <div className="flex items-start gap-4 p-5 rounded-xl bg-neutral-800/40 border border-neutral-700/50">
+              <div className="shrink-0 w-10 h-10 rounded-lg bg-[#F5C244]/10 flex items-center justify-center text-[#F5C244]">
+                <Shield className="w-5 h-5" />
+              </div>
+              <div>
+                <div className="text-white font-semibold mb-1">数据安全可控</div>
+                <div className="text-neutral-400 text-sm leading-relaxed">内网部署 + RBAC 分权，飞行数据不出企业边界</div>
+              </div>
             </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">99.9%</div>
-              <div className="text-neutral-400 text-sm">系统可用性</div>
+            <div className="flex items-start gap-4 p-5 rounded-xl bg-neutral-800/40 border border-neutral-700/50">
+              <div className="shrink-0 w-10 h-10 rounded-lg bg-[#F5C244]/10 flex items-center justify-center text-[#F5C244]">
+                <AppWindow className="w-5 h-5" />
+              </div>
+              <div>
+                <div className="text-white font-semibold mb-1">开放生态共创</div>
+                <div className="text-neutral-400 text-sm leading-relaxed">应用市场 + 二次开发接口，算法与业务按需扩展</div>
+              </div>
             </div>
           </div>
         </div>
