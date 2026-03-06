@@ -1,6 +1,7 @@
 import { ArrowRight, Box, Check, Cpu, FileBarChart, Globe, LayoutDashboard, Map, Shield, Users, Zap } from "lucide-react";
 import { Link } from "react-router";
 import { motion } from "motion/react";
+import CommandCenterScreen from "../../components/CommandCenterScreen";
 
 export default function Home() {
   const industries = [
@@ -114,17 +115,8 @@ export default function Home() {
             />
           </div>
 
-          <div className="mt-20 rounded-2xl overflow-hidden border border-neutral-800 shadow-2xl relative">
-            <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent z-10" />
-            <img 
-              src="https://images.unsplash.com/photo-1728577379969-768bf0747172?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwbWFwJTIwZGF0YSUyMGFuYWx5dGljcyUyMGRhcmslMjB1aXxlbnwxfHx8fDE3NzIzNDgzMDd8MA&ixlib=rb-4.1.0&q=80&w=1080" 
-              alt="Dashboard Interface" 
-              className="w-full object-cover opacity-80"
-            />
-            <div className="absolute bottom-0 left-0 right-0 p-8 z-20 text-center">
-              <h3 className="text-2xl font-bold text-white mb-2">指挥中心大屏可视化</h3>
-              <p className="text-neutral-300">实时掌握作业进度、设备位置与健康状态</p>
-            </div>
+          <div className="mt-20">
+            <CommandCenterScreen />
           </div>
         </div>
       </section>
